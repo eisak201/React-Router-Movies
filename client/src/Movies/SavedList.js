@@ -4,7 +4,7 @@ const SavedList = props => (
   <div className="saved-list">
     <h3>Saved Movies:</h3>
     {props.list.map(movie => (
-      <span className="saved-movie">{movie.title}</span>
+      <div onClick={() => props.removeFromSavedList(movie)} key={movie.id} className="saved-movie">{movie.title}</div>
     ))}
     <Link to='/'><div className="home-button">Home</div></Link>
   </div>
