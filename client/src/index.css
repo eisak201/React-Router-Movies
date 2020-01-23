@@ -52,20 +52,31 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-}
-      label{
-        width: 50%;
+  }
+
+      button{
+        width: 20%;
         font-size: 1.3rem;
-        
+        background-color: goldenrod;
+        color: beige;
+        cursor: pointer;
+      }
+      button:hover {
+      background-color: maroon;
+      color: goldenrod
+      transform
     }
+   
   input{
-    width:50%;
+    width:70%;
     padding: 4px;
-    height:20px;
+    height:15px;
     font-size: 1.3rem;
-    margin-left: 12px;
     margin: 2px 5px;
     text-align: center;
+    border: 2px solid goldenrod;
+    border-radius: 8%;
+    margin-right: 20px;
   }
 
 .saved-list h3 {
@@ -76,7 +87,7 @@ body {
   margin: 0 10px;
 }
 .saved-active {
-  color: blue;
+  color: maroon;
   border: 1px solid grey;
   padding: 5px;
 }
@@ -92,16 +103,24 @@ body {
   border: 1px solid grey;
   padding: 5px 10px;
   background-color: lightseagreen;
+  cursor: pointer;
 }
 .save-button:hover {
   background-color: goldenrod;
   color: white;
 }
 
-.home-button {
+.home-button  {
   padding: 5px 10px;
-  background-color: lightskyblue;
+  background-color: goldenrod;
+  text-decoration: none;
+  cursor: pointer;
 }
+  a{
+text-decoration: none;
+color: beige;
+  }
+
 .movie-list a{
     text-decoration: none;
     color: maroon;
